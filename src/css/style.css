@@ -1,0 +1,155 @@
+body{
+    background-color: var(--Violet);
+    height: 100vh;
+}
+.container{
+    background: url(../images/bg-desktop.svg) center no-repeat;
+    height: 100%;
+}
+
+.container .header img{
+    width: 220px;
+}
+.container .header{
+    height: 150px;
+    padding: 50px;
+    margin-left: 20px;
+}
+
+.container .body{
+    display: flex;
+    padding: 0px 50px;
+}
+
+.container .body .about{
+    padding: 35px 50px;
+    color: white;
+}
+.container .body .about h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+
+.container .body .about p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 25px;
+
+}
+
+.container .body .about .btn-register{
+    background-color: white;
+    margin-top: 28px;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 30px rgb(49, 4, 80);
+    
+}
+
+.container .body .about .btn-register a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--Violet);
+
+
+}
+
+.container .socials{
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 100px 40px 0;
+}
+
+.container .socials a{
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+}
+
+.container .socials a:hover{
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
+
+
+.container .body .about .btn-register:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+@media(max-width: 375px){
+    .container{
+        background: url(../images/bg-mobile.svg) no-repeat;  
+    }
+
+    .container .header{
+        height: 100px;
+        padding: 30px;
+    }
+
+    .container .header img{
+        max-width: 40%;
+    }
+
+    .container .body{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container .body .mockups img{
+        max-width: 300px;
+    }
+
+    .container .body .about{
+        padding: 60px;
+        
+    }
+
+    .container .body .about h2{
+        font-size: 2rem;
+
+    }
+
+    .container .body .about p{
+        font-size: 1.5rem;
+    }
+
+    .container .body .about .btn-register{
+        height: 40px;
+        margin: 30px auto 0;
+    }
+
+    .container .body .about .btn-register a{
+        font-size: 1.5rem;
+    }
+
+    .container .socials{
+        padding: 50px;
+        padding-top: 0;
+        gap: 10px;
+        font-size: 1.5rem;
+        justify-content: center;
+        
+    }
+
+    .container .socials a{
+        width: 30px;
+    }
+
+
+}
